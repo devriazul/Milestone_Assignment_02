@@ -38,9 +38,9 @@ body {
     font-size: 12px;
     border-radius: 50px;
     cursor: pointer;
-    /* box-shadow: 0 7px 0 #a5075e; */
     position: relative;
     top: 0;
+    font-size: 15px;
 }
 
 
@@ -83,6 +83,8 @@ nav {
     min-height: 300px;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+    margin: 30px;
 }
 
 .banner-left {
@@ -94,6 +96,11 @@ nav {
 
 .banner-left h1 {
     font-size: 45px;
+}
+
+.banner-left h2 {
+    font-weight: 700;
+    font-size: 27px;
 }
 
 .banner-left p {
@@ -160,4 +167,46 @@ nav {
 
 .see-more a {
     text-decoration: none;
+}
+
+
+/* Contact Style  */
+
+.contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.contact-left img {
+    width: 80%;
+}
+
+.contact-right form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-field {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 18px;
+    font-family: inherit;
+    outline: 0;
+    border: 1px solid #E02C6D;
+}
+
+.footer {
+    height: 200px;
+    background-color: #0A0826;
+    color: white;
+}
+
+.footer-items {
+    text-align: center;
+    padding: 20px;
+    line-height: 2;
 }
