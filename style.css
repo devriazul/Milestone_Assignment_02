@@ -79,7 +79,7 @@ nav {
 /* Banner Section Style  */
 
 .banner {
-    height: calc(100vh - 80px);
+    /* height: calc(100vh - 80px); */
     min-height: 300px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -110,4 +110,15 @@ nav {
 
 .banner-right img {
     width: 100%;
+}
+
+
+/* Logo Scrolling Section  */
+
+.scroll-logo {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid black;
 }
