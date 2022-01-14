@@ -118,7 +118,39 @@ nav {
 .scroll-logo {
     display: flex;
     justify-content: space-between;
-    margin: 20px;
+    margin: 50px;
     padding: 20px;
     border: 1px solid black;
+}
+
+
+/* Products Collection Style  */
+
+.section-title {
+    text-align: center;
+    margin: 50px;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+
+.product {
+    margin: 0 auto;
+}
+
+.star {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.see-more {
+    text-align: right;
+    margin: 20px 0;
+}
+
+.see-more a {
+    text-decoration: none;
 }
