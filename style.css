@@ -310,6 +310,10 @@ nav {
     .banner {
         margin: 20px;
     }
+    .banner-left {
+        align-items: center;
+        text-align: center;
+    }
 }
 
 @media (max-width:576px) {
@@ -325,5 +329,9 @@ nav {
     }
     .social-icon {
         font-size: 15px;
+    }
+    .banner-left {
+        align-items: center;
+        text-align: center;
     }
 }
