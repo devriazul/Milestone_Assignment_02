@@ -44,7 +44,7 @@ body {
 }
 
 
-/* navbar */
+/* nav toggler style css */
 
 #nav-toggler {
     display: none;
@@ -145,7 +145,7 @@ nav {
 }
 
 
-/* Products Collection Style  */
+/* Products Section Style  */
 
 .section-title {
     text-align: center;
