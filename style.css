@@ -213,6 +213,9 @@ nav {
     border: 1px solid #E02C6D;
 }
 
+
+/* Footer Style CSS  */
+
 .footer {
     height: 200px;
     background-color: #0A0826;
@@ -223,6 +226,15 @@ nav {
     text-align: center;
     padding: 20px;
     line-height: 2;
+}
+
+.social-icon {
+    font-size: 25px;
+    color: white;
+    margin: 5px;
+    padding: 10px;
+    background-color: rgb(57, 57, 99);
+    border-radius: 50px;
 }
 
 
