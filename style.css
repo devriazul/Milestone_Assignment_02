@@ -131,7 +131,7 @@ nav {
 .banner-right {
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
 }
 
 .banner-right img {
@@ -257,15 +257,23 @@ nav {
     }
 }
 
-@media (max-width:800px) {
+@media (max-width:768px) {
     .banner {
         grid-template-columns: 1fr;
         height: fit-content;
         align-items: center;
     }
-    .products,
+    .banner-right img {
+        width: 80%;
+    }
+    .products {
+        grid-template-columns: 1fr 1fr;
+    }
     .contact {
         grid-template-columns: 1fr;
+    }
+    .product img {
+        max-width: 100%;
     }
     .banner-left {
         order: 2;
@@ -294,8 +302,28 @@ nav {
     }
     .contact-left {
         text-align: center;
+        justify-content: center;
     }
     .scroll-logo {
         display: none;
+    }
+    .banner {
+        margin: 20px;
+    }
+}
+
+@media (max-width:576px) {
+    .banner {
+        margin: 10px;
+    }
+    .products {
+        grid-template-columns: 1fr;
+    }
+    .banner-left {
+        order: 2;
+        padding: 10px 0;
+    }
+    .social-icon {
+        font-size: 15px;
     }
 }
