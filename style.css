@@ -342,3 +342,15 @@ nav {
         text-align: center;
     }
 }
+
+@media (max-width:340px) {
+    .banner {
+        margin: 5px;
+    }
+    .social-icon {
+        font-size: 15px;
+    }
+    .footer-items {
+        line-height: 1.6;
+    }
+}
