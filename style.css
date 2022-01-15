@@ -44,6 +44,19 @@ body {
 }
 
 
+/* navbar */
+
+#nav-toggler {
+    display: none;
+}
+
+.nav-toggler-icon {
+    display: none;
+    color: black;
+    font-size: 30px;
+}
+
+
 /* Nav Style  */
 
 nav {
@@ -94,8 +107,9 @@ nav {
     align-items: flex-start;
 }
 
-.banner-left h1 {
-    font-size: 45px;
+.banner-left {
+    order: 2;
+    padding: 50px 0;
 }
 
 .banner-left h2 {
@@ -209,4 +223,62 @@ nav {
     text-align: center;
     padding: 20px;
     line-height: 2;
+}
+
+
+/* Responsive CSS */
+
+@media (max-width:950px) {
+    .products {
+        grid-template-columns: 1fr 1fr;
+    }
+    .banner-left h1 {
+        font-size: 35px;
+    }
+    .scroll-logo {
+        display: none;
+    }
+}
+
+@media (max-width:800px) {
+    .banner {
+        grid-template-columns: 1fr;
+        height: fit-content;
+        align-items: center;
+    }
+    .products,
+    .contact {
+        grid-template-columns: 1fr;
+    }
+    .banner-left {
+        order: 2;
+        padding: 50px 0;
+    }
+    .nav-toggler-icon {
+        display: block;
+    }
+    .navigation {
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        background-color: #fff;
+        padding: 20px 0;
+        transform: translateY(-360px);
+        transition: .5s ease-in-out;
+    }
+    .navigation li a {
+        color: #121212;
+    }
+    #nav-toggler:checked~.navigation {
+        transform: translateY(0px);
+    }
+    .contact-left {
+        text-align: center;
+    }
+    .scroll-logo {
+        display: none;
+    }
 }
