@@ -169,6 +169,7 @@ nav {
     padding: 10px;
     box-shadow: lightcyan;
     line-height: 2;
+    width: fit-content;
 }
 
 .star {
@@ -245,7 +246,13 @@ nav {
 
 /* Responsive CSS */
 
-@media (max-width:950px) {
+@media (max-width:1030px) {
+    .products {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width:960px) {
     .products {
         grid-template-columns: 1fr 1fr;
     }
